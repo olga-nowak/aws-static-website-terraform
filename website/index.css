@@ -1,0 +1,79 @@
+body {
+    background-color: #FFE1FF;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.header {
+    background-color: #fff;
+    color: #212529;
+    margin: 20;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.ul {
+    text-align: left;
+}
+
+#yes {
+    background-color: #EEAEEE;
+}
+
+#no {
+    background-color: #AB82FF;
+}
+
+.request {
+    background-color: #AB82FF;
+}
+
+.p {
+    text-align: left;
+    margin-right: 20px;
+}
+
+
+h1 {
+    font-family: 'Cursive', "Lucida Handwriting";
+    font-size: 48px;
+}
+
+.footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem;
+    color: #212529;
+    text-align: center;
+}
+
+#recipe {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#answer {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
