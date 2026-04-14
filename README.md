@@ -45,21 +45,17 @@ The system follows a simple and efficient serverless design:
 
 ```
 cloud/
-├── docs
 ├── README.md
-├── terraform
+├── terraform/
 │   ├── cloudfront.tf
 │   ├── main.tf
 │   ├── outputs.tf
 │   ├── providers.tf
 │   ├── s3.tf
-│   ├── terraform.tfstate
-│   ├── terraform.tfstate.backup
-│   ├── terraform.tfvars
 │   ├── variables.tf
 │   ├── versions.tf
 │   └── website_files.tf
-└── website
+└── website/
     ├── cooking.png
     ├── error.css
     ├── error.html
