@@ -45,19 +45,32 @@ The system follows a simple and efficient serverless design:
 
 ```
 cloud/
-├── terraform/
-│   ├── main.tf
-│   ├── s3.tf
+├── docs
+│   ├── Nowak-Olga_14126518_Cloud Programming_P1_S.pdf
+│   └── Nowak-Olga_14126518_Cloud Programming_P2_S.pdf
+├── README.md
+├── terraform
 │   ├── cloudfront.tf
-│   ├── website_files.tf
-│   └── ...
-└── website/
-    ├── index.html
-    ├── error.html
-    ├── index.css
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── providers.tf
+│   ├── s3.tf
+│   ├── terraform.tfstate
+│   ├── terraform.tfstate.backup
+│   ├── terraform.tfvars
+│   ├── variables.tf
+│   ├── versions.tf
+│   └── website_files.tf
+└── website
+    ├── cooking.png
     ├── error.css
-    └── happy_cat.png
-```
+    ├── error.html
+    ├── family.webp
+    ├── happy_cat.png
+    ├── index.css
+    ├── index.html
+    ├── sport.avif
+    └── study.webp
 
 ---
 
