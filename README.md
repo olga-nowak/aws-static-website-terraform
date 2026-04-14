@@ -65,6 +65,8 @@ cloud/
     ├── index.html
     ├── sport.avif
     └── study.webp
+    
+```
 
 ---
 
