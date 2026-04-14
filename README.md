@@ -46,8 +46,6 @@ The system follows a simple and efficient serverless design:
 ```
 cloud/
 ├── docs
-│   ├── Nowak-Olga_14126518_Cloud Programming_P1_S.pdf
-│   └── Nowak-Olga_14126518_Cloud Programming_P2_S.pdf
 ├── README.md
 ├── terraform
 │   ├── cloudfront.tf
