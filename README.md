@@ -47,17 +47,25 @@ The system follows a simple and efficient serverless design:
 
 ```
 cloud/
+├── .github
+│   └── workflows
+│       └── terraform-check.yml
+├── .gitignore
 ├── README.md
-├── terraform/
+├── scripts
+│   └── deploy.sh
+├── terraform
 │   ├── cloudfront.tf
 │   ├── main.tf
 │   ├── outputs.tf
 │   ├── providers.tf
 │   ├── s3.tf
+│   ├── .terraform.lock.hcl
+│   ├── terraform.tfvars.example
 │   ├── variables.tf
 │   ├── versions.tf
 │   └── website_files.tf
-└── website/
+└── website
     ├── cooking.png
     ├── error.css
     ├── error.html
