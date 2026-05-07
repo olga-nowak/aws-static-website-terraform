@@ -1,5 +1,7 @@
 # AWS Static Website with Terraform
 
+![Terraform Check](https://github.com/olga-nowak/aws-static-website-terraform/actions/workflows/terraform-check.yml/badge.svg)
+
 ## Overview
 
 This project implements a **serverless static website architecture** on AWS using **Terraform**.
