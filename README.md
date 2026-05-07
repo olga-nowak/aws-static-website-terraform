@@ -72,19 +72,29 @@ cloud/
 
 ## Deployment
 
-### 1. Initialize Terraform
+## 1. Validation and Testing
+
+Before deployment, validate the Terraform configuration:
+
+```
+terraform fmt -check -recursive
+terraform validate
+terraform plan
+```
+
+### 2. Initialize Terraform
 
 ```
 terraform init
 ```
 
-### 2. Preview infrastructure
+### 3. Preview infrastructure
 
 ```
 terraform plan
 ```
 
-### 3. Deploy
+### 4. Deploy
 
 ```
 terraform apply
