@@ -53,7 +53,8 @@ cloud/
 ├── .gitignore
 ├── README.md
 ├── scripts
-│   └── deploy.sh
+│   ├── deploy.sh
+│   └── destroy.sh
 ├── terraform
 │   ├── cloudfront.tf
 │   ├── main.tf
@@ -103,13 +104,15 @@ terraform init
 ```
 terraform plan
 ```
+Once prompted, enter aws_region and give a unique name to the bucket 
+according to examples in terraform.tfvars.example
 
 ### 4. Deploy
 
 ```
 terraform apply
 ```
-
+If prompted again, enter region and bucket name again
 ---
 
 ## Accessing the Website
@@ -129,7 +132,7 @@ To remove all AWS resources:
 ```
 terraform destroy
 ```
-
+If prompted, enter region and bucket name again.
 If the S3 bucket is not empty:
 
 ```
