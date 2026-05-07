@@ -40,13 +40,14 @@ The system follows a simple and efficient serverless design:
 * Fully reproducible infrastructure
 * Automated website deployment via Terraform
 * Custom error handling (403/404 → `error.html`)
+* Automated Terraform validation with GitHub Actions
 
 ---
 
 ## Project Structure
 
 ```
-cloud/
+aws-static-website-terraform/
 ├── .github
 │   └── workflows
 │       └── terraform-check.yml
@@ -83,7 +84,20 @@ cloud/
 
 ## Deployment
 
-## 1. Validation and Testing
+### 1. Clone Repository
+
+```
+git clone <repository-url>
+cd aws-static-website-terraform/terraform
+```
+
+### 2. Initialize Terraform
+
+```
+terraform init
+```
+
+### 3. Validation and Testing
 
 Before deployment, validate the Terraform configuration:
 
@@ -93,26 +107,18 @@ terraform validate
 terraform plan
 ```
 
-### 2. Initialize Terraform
-
-```
-terraform init
-```
-
-### 3. Preview infrastructure
-
-```
-terraform plan
-```
-Once prompted, enter aws_region and give a unique name to the bucket 
-according to examples in terraform.tfvars.example
+Once prompted, enter the AWS region and a globally unique bucket name according to the examples in `terraform.tfvars.example`.
 
 ### 4. Deploy
 
 ```
 terraform apply
 ```
-If prompted again, enter region and bucket name again
+
+If prompted, enter the AWS region and bucket name again.
+
+Alternatively, deployment and cleanup can be performed using the scripts in the `scripts/` directory.
+
 ---
 
 ## Accessing the Website
@@ -133,6 +139,7 @@ To remove all AWS resources:
 terraform destroy
 ```
 If prompted, enter region and bucket name again.
+
 If the S3 bucket is not empty:
 
 ```

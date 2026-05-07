@@ -14,4 +14,7 @@ terraform.tfvars
 # OS
 .DS_Store
 
-docs/
+*.pdf
+*.zip
+phases_documentation/
+Nowak-Olga_14126518_Cloud Programming_AWS Static Web Site Project/
